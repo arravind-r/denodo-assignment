@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Colors */
+    --primary-p50: hsla(5, 86%, 97%, 1);
+    --primary-p100: hsla(4, 93%, 94%, 1);
+    --primary-p200: hsla(3, 96%, 89%, 1);
+    --primary-p300: hsla(3, 94%, 82%, 1);
+    --primary-p400: hsla(3, 91%, 71%, 1);
+    --primary-p500: hsla(3, 85%, 61%, 1);
+    --primary-p600: hsla(3, 73%, 51%, 1);
+    --primary-p700: hsla(3, 74%, 42%, 1);
+    --primary-p800: hsla(3, 70%, 35%, 1);
+    --primary-p900: hsla(3, 63%, 31%, 1);
+
+    --surfaces-white: hsla(0, 0%, 100%, 1);
+    --secondary-s50: hsla(223, 88%, 97%, 1);
+    --secondary-s100: hsla(223, 78%, 93%, 1);
+    --secondary-s200: hsla(221, 82%, 87%, 1);
+    --secondary-s300: hsla(220, 82%, 78%, 1);
+    --secondary-s400: hsla(222, 79%, 68%, 1);
+    --secondary-s500: hsla(225, 77%, 60%, 1);
+    --secondary-s600: hsla(230, 70%, 53%, 1);
+    --secondary-s700: hsla(234, 60%, 40%, 1);
+    --secondary-s800: hsla(233, 54%, 36%, 1);
+    --secondary-s900: hsla(234, 48%, 21%, 1);
+
+    --surfaces-black: hsla(0, 0%, 0%, 1);
+    --surfaces-heading: hsla(330, 6%, 13%, 1);
+    --surfaces-n50: hsla(0, 0%, 98%, 1);
+    --surfaces-n100: hsla(0, 0%, 96%, 1);
+    --surfaces-n200: hsla(0, 0%, 90%, 1);
+    --surfaces-n300: hsla(0, 0%, 83%, 1);
+    --surfaces-n400: hsla(0, 0%, 63%, 1);
+    --surfaces-n500: hsla(0, 0%, 45%, 1);
+    --surfaces-n600: hsla(0, 0%, 32%, 1);
+    --surfaces-n700: hsla(0, 0%, 25%, 1);
+    --surfaces-n800: hsla(0, 0%, 15%, 1);
+    --surfaces-n900: hsla(0, 0%, 9%, 1);
+    --surfaces-n950: hsla(0, 0%, 4%, 1);
+
+    --supporting-info: hsla(199, 100%, 48%, 1);
+    --supporting-warning: hsla(25, 100%, 50%, 1);
+    --supporting-success: hsla(160, 100%, 37%, 1);
+    --supporting-error: hsla(357, 96%, 58%, 1);
+}
