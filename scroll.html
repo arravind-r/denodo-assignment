@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Swiper demo</title>
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" />
+		<style>
+			.logo-scroller {
+				padding: 20px 0;
+				overflow: hidden;
+			}
+
+			.box {
+				width: 120px;
+				height: 120px;
+				border-radius: 12px;
+			}
+
+			/* Demo colors */
+			.box1 {
+				background: #ff6b6b;
+			}
+			.box2 {
+				background: #4ecdc4;
+			}
+			.box3 {
+				background: #556270;
+			}
+			.box4 {
+				background: #c7f464;
+			}
+			.box5 {
+				background: #ff9f1c;
+			}
+
+			/* Remove gaps between slides */
+			.splide__slide {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+
+			.logo-carousal-two .splide__track {
+				padding-left: 120px;
+			}
+			.logo-carousal-two .splide__list {
+				margin-left: 120px;
+			}
+
+			.logo-carousal-three .splide__track {
+				padding-left: 60px;
+			}
+			.logo-carousal-three .splide__list {
+				margin-left: 60px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div
+			class="splide logo-carousal-one logo-scroller"
+			aria-label="Infinite Logo Scroll">
+			<div class="splide__track">
+				<ul class="splide__list">
+					<!-- Your boxes -->
+					<li class="splide__slide box box1"></li>
+					<li class="splide__slide box box2"></li>
+					<li class="splide__slide box box3"></li>
+					<li class="splide__slide box box4"></li>
+					<li class="splide__slide box box5"></li>
+				</ul>
+			</div>
+		</div>
+
+		<div
+			class="splide logo-carousal-two logo-scroller"
+			aria-label="Infinite Logo Scroll">
+			<div class="splide__track">
+				<ul class="splide__list">
+					<!-- Your boxes -->
+					<li class="splide__slide box box1"></li>
+					<li class="splide__slide box box2"></li>
+					<li class="splide__slide box box3"></li>
+					<li class="splide__slide box box4"></li>
+					<li class="splide__slide box box5"></li>
+				</ul>
+			</div>
+		</div>
+
+		<div
+			class="splide logo-carousal-three logo-scroller"
+			aria-label="Infinite Logo Scroll">
+			<div class="splide__track">
+				<ul class="splide__list">
+					<!-- Your boxes -->
+					<li class="splide__slide box box1"></li>
+					<li class="splide__slide box box2"></li>
+					<li class="splide__slide box box3"></li>
+					<li class="splide__slide box box4"></li>
+					<li class="splide__slide box box5"></li>
+				</ul>
+			</div>
+		</div>
+
+		<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
+
+		<script>
+			document.addEventListener("DOMContentLoaded", function () {
+				new Splide(".logo-carousal-one", {
+					type: "loop",
+					perPage: 10,
+					gap: "1.5rem",
+					drag: false,
+					pagination: false,
+					arrows: false,
+					autoScroll: {
+						speed: 2.3,
+						pauseOnHover: false,
+						pauseOnFocus: false,
+					},
+				}).mount(window.splide.Extensions);
+			});
+
+			document.addEventListener("DOMContentLoaded", function () {
+				new Splide(".logo-carousal-two", {
+					direction: "rtl",
+					type: "loop",
+					perPage: 10,
+					gap: "1.5rem",
+					drag: false,
+					pagination: false,
+					arrows: false,
+					autoScroll: {
+						speed: 1.7,
+						pauseOnHover: false,
+						pauseOnFocus: false,
+					},
+				}).mount(window.splide.Extensions);
+			});
+
+			document.addEventListener("DOMContentLoaded", function () {
+				new Splide(".logo-carousal-three", {
+					type: "loop",
+					perPage: 10,
+					gap: "1.5rem",
+					drag: false,
+					pagination: false,
+					arrows: false,
+					autoScroll: {
+						speed: 1,
+						pauseOnHover: false,
+						pauseOnFocus: false,
+					},
+				}).mount(window.splide.Extensions);
+			});
+		</script>
+	</body>
+</html>

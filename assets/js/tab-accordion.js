@@ -1,37 +1,43 @@
-const tabs = document.querySelectorAll(".tab");
-const headers = document.querySelectorAll(".accordion-header");
-const contents = document.querySelectorAll(".content");
+(function () {
+	const root = document.querySelector("#project-tabs");
+	if (!root) return;
 
-/* Default state */
-showTab(0);
-openAccordion(0);
+	const tabs = root.querySelectorAll(".c-tabs__tab");
+	const headers = root.querySelectorAll(".c-tabs__accordion-header");
+	const contents = root.querySelectorAll(".c-tabs__content");
 
-/* -------- Desktop Tabs -------- */
-function showTab(index) {
-	tabs.forEach((t) => t.classList.remove("active"));
-	contents.forEach((c) => c.classList.remove("active"));
+	// default state
+	setTab(0);
+	openAccordion(0);
 
-	tabs[index].classList.add("active");
-	contents[index].classList.add("active");
-}
+	// desktop tab
+	function setTab(index) {
+		tabs.forEach((t) => t.classList.remove("c-tabs__tab--active"));
+		contents.forEach((c) => c.classList.remove("c-tabs__content--active"));
 
-/* -------- Mobile Accordion -------- */
-function openAccordion(index) {
-	contents.forEach((c, i) => {
-		if (i === index) {
-			c.classList.add("open");
-			c.style.maxHeight = c.scrollHeight + "px";
-		} else {
-			c.classList.remove("open");
-			c.style.maxHeight = "0px";
-		}
+		tabs[index].classList.add("c-tabs__tab--active");
+		contents[index].classList.add("c-tabs__content--active");
+	}
+
+	// mobile accordion
+	function openAccordion(index) {
+		contents.forEach((c, i) => {
+			if (i === index) {
+				c.classList.add("c-tabs__content--open");
+				c.style.maxHeight = c.scrollHeight + "px";
+			} else {
+				c.classList.remove("c-tabs__content--open");
+				c.style.maxHeight = "0";
+			}
+		});
+	}
+
+	// binding
+	tabs.forEach((tab, index) => {
+		tab.addEventListener("click", () => setTab(index));
 	});
-}
 
-/* Desktop tab clicks */
-tabs.forEach((tab, i) => tab.addEventListener("click", () => showTab(i)));
-
-/* Mobile accordion clicks */
-headers.forEach((header, i) =>
-	header.addEventListener("click", () => openAccordion(i))
-);
+	headers.forEach((header, index) => {
+		header.addEventListener("click", () => openAccordion(index));
+	});
+})();

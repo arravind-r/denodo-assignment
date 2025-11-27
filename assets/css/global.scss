@@ -89,6 +89,11 @@ html {
 	scroll-behavior: smooth;
 }
 
+body {
+	width: 100%;
+	overflow-x: hidden;
+}
+
 body,
 button {
 	font-family: "Proxima Nova", sans-serif;
@@ -204,9 +209,23 @@ h6 {
 	border: 1px solid var(--primary-p400);
 	box-shadow: 0px 2px 6px 2px rgba(0, 0, 0, 0.08);
 	text-decoration: none;
+	transition: background-color 0.25s ease, border-color 0.25s ease,
+		box-shadow 0.25s ease, transform 0.3s ease;
 
 	img {
 		width: 1.25rem;
+	}
+
+	&:hover {
+		background-color: var(--primary-p700);
+		border: 1px solid var(--primary-p500);
+		box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+		transform: translateY(-2px);
+	}
+
+	&:active {
+		transform: translateY(0px);
+		box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.08);
 	}
 }
 
@@ -220,12 +239,26 @@ h6 {
 	border-radius: 0.25rem;
 	background-color: var(--surfaces-n50);
 	color: var(--surfaces-n600);
-	border: 1px solid hsla(0, 0%, 90%, 40);
+	border: 1px solid hsla(0, 0%, 90%, 0.4);
 	box-shadow: 0px 2px 6px 2px rgba(0, 0, 0, 0.06);
 	text-decoration: none;
+	transition: background-color 0.25s ease, border-color 0.25s ease,
+		box-shadow 0.25s ease, transform 0.3s ease;
 
 	img {
 		width: 1.25rem;
+	}
+
+	&:hover {
+		background-color: var(--surfaces-n100);
+		border-color: hsla(0, 0%, 80%, 0.6);
+		box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+		transform: translateY(-2px);
+	}
+
+	&:active {
+		transform: translateY(0);
+		box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.06);
 	}
 }
 
@@ -238,6 +271,7 @@ h6 {
 	color: var(--surfaces-black);
 	border-bottom: 2px solid var(--surfaces-black);
 	text-decoration: none;
+	transition: color 0.35s ease, border-color 0.35s ease;
 
 	img {
 		width: 0.875rem;
@@ -248,6 +282,7 @@ h6 {
 .container {
 	max-width: 1300px;
 	margin: 0 auto;
+	position: relative;
 }
 
 /* Small Laptops */
