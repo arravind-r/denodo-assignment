@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
 	new Splide(".logo-carousal-one", {
 		type: "loop",
-		perPage: 9,
+		perPage: 11,
 		gap: "1.5rem",
 		drag: false,
 		pagination: false,
@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	new Splide(".logo-carousal-two", {
 		direction: "rtl",
 		type: "loop",
-		perPage: 9,
+		perPage: 11,
 		gap: "1.5rem",
 		drag: false,
 		pagination: false,
@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("DOMContentLoaded", function () {
 	new Splide(".logo-carousal-three", {
 		type: "loop",
-		perPage: 9,
+		perPage: 11,
 		gap: "1.5rem",
 		drag: false,
 		pagination: false,
