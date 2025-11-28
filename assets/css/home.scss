@@ -169,13 +169,25 @@
 			margin-bottom: 1.25rem;
 		}
 
-		h6 {
+		h5 {
 			color: var(--surfaces-heading);
 			margin-bottom: 0.75rem;
-			font-weight: 600;
+			// font-weight: 600;
 		}
 
 		.body_text_sm {
+			color: var(--surfaces-n500);
+			margin-bottom: 0.75rem;
+
+			span {
+				background: var(--secondary-s100);
+				padding: 0.1em 0.25em;
+				border-radius: 0.125rem;
+				color: var(--surfaces-black);
+			}
+		}
+
+		.body_text {
 			color: var(--surfaces-n500);
 			margin-bottom: 0.75rem;
 
@@ -1034,7 +1046,7 @@ footer {
 
 			li a {
 				text-decoration: none;
-				color: var(--surfaces-n400);
+				color: var(--surfaces-n500);
 				transition: color 0.25s ease;
 
 				&:hover {
@@ -1147,8 +1159,8 @@ footer {
 
 					a {
 						text-decoration: none;
-						color: var(--surfaces-n400);
-						font-weight: 300;
+						color: var(--surfaces-n400) !important;
+						font-weight: 300 !important;
 						line-height: 1.84em;
 					}
 
@@ -1158,7 +1170,7 @@ footer {
 
 					&:hover {
 						a {
-							color: var(--surfaces-n200);
+							color: var(--surfaces-n200) !important;
 						}
 					}
 				}
