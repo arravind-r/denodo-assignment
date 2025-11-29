@@ -2,6 +2,11 @@ document.addEventListener("DOMContentLoaded", function () {
 	new Splide(".logo-carousal-one", {
 		type: "loop",
 		perPage: 11,
+		breakpoints: {
+			1400: { perPage: 9 },
+			1024: { perPage: 6 },
+			768: { perPage: 4 },
+		},
 		gap: "1.5rem",
 		drag: false,
 		pagination: false,
@@ -19,6 +24,11 @@ document.addEventListener("DOMContentLoaded", function () {
 		direction: "rtl",
 		type: "loop",
 		perPage: 11,
+		breakpoints: {
+			1400: { perPage: 9 },
+			1024: { perPage: 6 },
+			768: { perPage: 4 },
+		},
 		gap: "1.5rem",
 		drag: false,
 		pagination: false,
@@ -35,6 +45,11 @@ document.addEventListener("DOMContentLoaded", function () {
 	new Splide(".logo-carousal-three", {
 		type: "loop",
 		perPage: 11,
+		breakpoints: {
+			1400: { perPage: 9 },
+			1024: { perPage: 6 },
+			768: { perPage: 4 },
+		},
 		gap: "1.5rem",
 		drag: false,
 		pagination: false,

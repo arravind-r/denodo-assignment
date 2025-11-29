@@ -286,22 +286,96 @@ h6 {
 }
 
 /* Small Laptops */
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1401px) {
 	.container {
 		max-width: 1140px;
 		margin: 0 auto;
 	}
+
+	h1 {
+		font-size: 2.75rem;
+		line-height: 1.14em;
+	}
+	h2 {
+		font-size: 2rem;
+		line-height: 1.28em;
+	}
+	h4 {
+		font-size: 1.25rem;
+		line-height: 1.5em;
+	}
+	h5 {
+		font-size: 1.15rem;
+		line-height: 1.3em;
+	}
+
+	.btn_text {
+		font-size: 0.875rem;
+		font-weight: 600;
+		line-height: 1em;
+		text-transform: uppercase;
+	}
+
+	.body_text_lg {
+		font-size: 1.025rem;
+		line-height: 1.56em;
+	}
+	.body_text {
+		font-size: 0.85rem;
+		line-height: 1.56em;
+	}
+	.body_text_sm {
+		font-size: 0.75rem;
+		line-height: 1.48em;
+	}
+
+	.primary_btn {
+		padding: 0.85rem;
+		img {
+			width: 1.15rem;
+		}
+	}
+
+	.ghost_btn {
+		padding: 0.85rem;
+		img {
+			width: 1.15rem;
+		}
+	}
 }
 
 /* Tablets */
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1025px) {
 	.container {
 		max-width: 100%;
+	}
+
+	h2 {
+		font-size: 1.7rem;
+		line-height: 1.45em;
+	}
+	h5 {
+		font-size: 1.05rem;
+		line-height: 1.4em;
+	}
+
+	.body_text_sm {
+		font-size: 0.8rem;
+		line-height: 1.56em;
+	}
+
+	.link_btn {
+		gap: 0.5rem;
+		border-bottom: 1.4px solid var(--surfaces-black);
+
+		img {
+			width: 0.75rem;
+		}
 	}
 }
 
 /* Mobile */
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
 	.container {
 		max-width: 100%;
 	}

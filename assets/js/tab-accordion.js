@@ -24,7 +24,8 @@
 		contents.forEach((c, i) => {
 			if (i === index) {
 				c.classList.add("c-tabs__content--open");
-				c.style.maxHeight = c.scrollHeight + "px";
+				// c.style.maxHeight = c.scrollHeight + "px";
+				c.style.maxHeight = "unset";
 			} else {
 				c.classList.remove("c-tabs__content--open");
 				c.style.maxHeight = "0";
