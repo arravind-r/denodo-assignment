@@ -350,15 +350,26 @@ h6 {
 		max-width: 100%;
 	}
 
+	h1 {
+		font-size: 2.25rem;
+		line-height: 1.35em;
+	}
 	h2 {
 		font-size: 1.7rem;
 		line-height: 1.45em;
+	}
+	h3 {
+		font-size: 1.5em;
 	}
 	h5 {
 		font-size: 1.05rem;
 		line-height: 1.4em;
 	}
 
+	.body_text {
+		font-size: 0.95rem;
+		line-height: 1.56em;
+	}
 	.body_text_sm {
 		font-size: 0.8rem;
 		line-height: 1.56em;
@@ -378,5 +389,20 @@ h6 {
 @media screen and (max-width: 768px) {
 	.container {
 		max-width: 100%;
+	}
+
+	h2 {
+		font-size: 1.5rem;
+		line-height: 1.5em;
+	}
+	h3 {
+		font-size: 1.35em;
+	}
+	h5 {
+		font-size: 1.2rem;
+	}
+
+	.body_text_sm {
+		font-size: 0.95rem;
 	}
 }

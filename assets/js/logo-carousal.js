@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
 		breakpoints: {
 			1400: { perPage: 9 },
 			1024: { perPage: 6 },
-			768: { perPage: 4 },
+			767: { perPage: 4 },
 		},
 		gap: "1.5rem",
 		drag: false,
@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
 		breakpoints: {
 			1400: { perPage: 9 },
 			1024: { perPage: 6 },
-			768: { perPage: 4 },
+			767: { perPage: 4 },
 		},
 		gap: "1.5rem",
 		drag: false,
@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function () {
 		breakpoints: {
 			1400: { perPage: 9 },
 			1024: { perPage: 6 },
-			768: { perPage: 4 },
+			767: { perPage: 4 },
 		},
 		gap: "1.5rem",
 		drag: false,
