@@ -1327,7 +1327,7 @@ footer {
 @media (max-width: 1401px) {
 	/* hero section */
 	.hero-section__wrapper {
-		padding: 5.5rem 0;
+		padding: 5.5rem 0 0 0;
 	}
 	.hero-section__content {
 		gap: 3.5rem;
@@ -1814,6 +1814,7 @@ footer {
 	.hero-section__left {
 		width: 100%;
 		gap: 2.5rem;
+		padding-bottom: 3rem;
 
 		h2 {
 			width: 85%;
